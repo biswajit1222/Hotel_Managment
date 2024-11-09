@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script type="text/javascript" charset="utf8"
+src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script type="text/javascript" charset="utf8"
+src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" charset="utf8"
+src="https://cdn.datatables.net/1.10.16/js/dataTables.jqueryui.min.js"></script>
+<link rel="stylesheet" type="text/css"
+href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
+<link rel="stylesheet" type="text/css"
+href="https://cdn.datatables.net/1.10.16/css/dataTables.jqueryui.min.css" />
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+<style>
+	 h1{
+    background-color:#33ffff;
+    }
+    ul,.green1{
+	color: red;	
+	}
+</style>
+<title>Insert title here</title>
+</head>
+<body>
+<body>
+<h1>INFY HOTEL TEAM</h1>
+<div>Hi  <b class="green1">${user}</b>,
+<p>You have successfully added ${roomType} room.Please see your added room details as below:</p>
+ <p>Room Type : <b class="green1">${roomType}</b></p> <p>Added Date : <b class="green1">${BookingDate}</b></p>
+ <p> Amenities Details :</p>
+<ul>
+<#list amenities as item>
+<li>${item}</li>
+</#list>
+</ul>
+</div>
+<div> Have a nice day..!</div>
+<div> Infy_Hotel Team</div>
+<br/>
+
+</body>
+</body>
+</html>
